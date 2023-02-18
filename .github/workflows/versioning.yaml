@@ -3,7 +3,6 @@ name: Keep the versions up-to-date
 on:
   release:
     types: [published, edited]
-  push:
 
 jobs:
   actions-tagger:
