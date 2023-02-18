@@ -28,7 +28,7 @@ jobs:
         with:
           notion_token: ${{ secrets.NOTION_TOKEN }}
           block_id: 7a94c1bcc03646dbac15494ebd7a5d6d
-          data: '{"type": "paragraph", "paragraph": {"rich_text": [{"text": {"content": "Shit bucket"}, "annotations": {"color": "yellow"}}]}}'
+          data: '{"type": "paragraph", "paragraph": {"rich_text": [{"text": {"content": "Updated from github"}, "annotations": {"color": "yellow"}}]}}'
 ```
 
 _note:_ The data type must be the same block type as the block you're updating.
