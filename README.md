@@ -24,13 +24,11 @@ jobs:
     name: Update notion block
     steps:
       - name: Update Notion Block from Github
-        uses: braedongough/update-notion-block
+        uses: braedongough/update-notion-block@v1.0.0
         with:
           notion_token: ${{ secrets.NOTION_TOKEN }}
-          block_id: 1cd2c86a1a2042668dcbdd531d065b87
-          data: |
-          '{"type": "heading_1", "heading_1": {"rich_text": [{"text": {"content": "UPDATE BLOCK FROM ACTION"}, "annotations": {"color": "blue"}}]}}'
-
+          block_id: 7a94c1bcc03646dbac15494ebd7a5d6d
+          data: '{"type": "paragraph", "paragraph": {"rich_text": [{"text": {"content": "Shit bucket"}, "annotations": {"color": "yellow"}}]}}'
 ```
 
 _note:_ The data type must be the same block type as the block you're updating.
