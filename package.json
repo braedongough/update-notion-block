@@ -1,0 +1,21 @@
+{
+  "name": "update-notion-block",
+  "version": "0.0.1",
+  "description": "A Github action for updating a block in notion.",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist",
+    "exec:local": "ncc run src/index.ts"
+  },
+  "author": "Braedon Gough",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "1.2.6",
+    "@notionhq/client": "^2.2.3"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.36.1",
+    "typescript": "^4.9.5",
+    "@types/node": "^18.13.0"
+  }
+}

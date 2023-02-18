@@ -1,0 +1,16 @@
+name: "Update Notion Block"
+description: "A Github Action for updating a block in notion"
+inputs:
+  notion_token:
+    description: "Your Notion API Token"
+    required: true
+  block_id:
+    description: "The Notion block id"
+    required: true
+  data:
+    description: "Updates the content for the specified block-id based on block type. See https://developers.notion.com/reference/update-a-block"
+    required: true
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
